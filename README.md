@@ -1,6 +1,6 @@
 # Password-Generator-Practice
 
-![Image of the password generator. It's a title, a box, and a button](./assets/Images/Password-Generator-Pic.JPG)
+![Image of the password generator. It's a title, a box, and a button](./assets/Images/Password-gen-pic-new.JPG)
 
 [Deployed Link](https://renbryant.github.io/Password-Generator-Practice/)
 
