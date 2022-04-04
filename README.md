@@ -25,6 +25,6 @@ I tried to make the password random as well using Math.floor(Math.random)
 
 However this also doesn't seem to work.
 
-I feel as if both of these problems co-relate, but no matter what little changes I do, no matter how long I look at it, I cannot seem to find the issue. Please help.
+I feel as if both of these problems correlate, but no matter what little changes I do, no matter how long I look at it, I cannot seem to find the issue. Please help.
 
 Thanks for checking in on my repository!
