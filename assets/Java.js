@@ -56,12 +56,11 @@ function generatePassword() {
   }
 
 
-  for (var i = 0; i < length; i++ ){
-    //logic
-    var randomPassword = Math.floor(Math.random() * length);
-    finalPassword = finalPassword + passwordOptions[randomPassword];
-    return passwordOptions.join('');
-  }
+  for (var i = 0; i <= length; i++ ) {
+    var finalPassword = Math.floor(Math.random() * passwordOptions,String);
+    finalPassword += finalPassword.passwordOptions +1;
+    return finalPassword
+   }
   
   console.log("this is the array of which the logic chooses the characters", passwordOptions)
 
@@ -76,6 +75,7 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
+  return finalPassword
 
 }
 
