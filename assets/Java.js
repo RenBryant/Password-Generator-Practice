@@ -3,9 +3,7 @@ var specialChar = ['@', '#', '$', '1', '%', '&', '*', '-', '_', '+', '=', '?', '
 var numChar = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 var lowerCaseChar = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 var upperCaseChar = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
-var passwordOptions = ['@', '#', '$', '1', '%', '&', '*', '-', '_', '+', '=', '?', '!', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd',
- 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
- 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+var passwordOptions = [];
 var finalPassword = [];
 
 // Get references to the #generate element
@@ -55,17 +53,21 @@ function generatePassword() {
     passwordOptions = passwordOptions.concat(upperCaseChar);
   }
 
+  if (hasLwrCaseChar){
+    passwordOptions = passwordOptions.concat(lowerCaseChar);
+  }
+console.log (passwordOptions)
 
-  for (var i = 0; i <= length; i++ ) {
-    var finalPassword = Math.floor(Math.random() * passwordOptions,String);
-    finalPassword += finalPassword.passwordOptions +1;
-    return finalPassword
+  for (var i = 0; i < length; i++ ) {
+    var finalPasswordIndex = Math.floor(Math.random() * passwordOptions.length);
+    finalPassword.push(passwordOptions[finalPasswordIndex]);
    }
   
+  console.log(finalPassword)
   console.log("this is the array of which the logic chooses the characters", passwordOptions)
 
   console.log('once loop finishes, characters are inserted here', finalPassword)
-  return finalPassword;
+  return finalPassword.join("");
 
 }
 
