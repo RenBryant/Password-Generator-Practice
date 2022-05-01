@@ -9,7 +9,7 @@ work so that a random password will be given at the push of a button.
 
 FIrst I added the function to generate the password, made sure the button works, and that the characters will display on the screen.
 
-Then I added arrays for numbers, special characters, upper case letters, and lower case letters. Another array with every one of these was
+Then I added arrays for numbers, special characters, upper case letters, and lower case letters. Another empty array with every one of these was
 created after that.
 
 Then I added a validation of the length to be between 8 and 128, and if not then the page would spit out an alert and an undefined password.
@@ -19,12 +19,6 @@ want any of the four options, it spits out an alert and then gives the user an u
 
 Then I made a for Loop that will spit out the options for the password based on what they chose.
 
-However it doesn't seem to work.
-
-I tried to make the password random as well using Math.floor(Math.random)
-
-However this also doesn't seem to work.
-
-I feel as if both of these problems correlate, but no matter what little changes I do, no matter how long I look at it, I cannot seem to find the issue. Please help.
+I made the password that is displayed in the end random by using using Math.floor(Math.random).
 
 Thanks for checking in on my repository!

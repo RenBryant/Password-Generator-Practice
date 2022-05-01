@@ -6,7 +6,7 @@ var upperCaseChar = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
 var passwordOptions = [];
 var finalPassword = [];
 
-// Get references to the #generate element
+// Get references to the generate element
 var generateBtn = document.querySelector("#generate");
 
 function generatePassword() {
@@ -21,7 +21,8 @@ function generatePassword() {
   }
 
   if (length > 128) {
-    alert('Password length must be at less than 128 characters')
+    alert('Password length must be less than 128 characters')
+    return
   }
 
   //character confirms
@@ -38,7 +39,6 @@ function generatePassword() {
     alert('Must select at least one character type!')
     return
   }
-
 
   //if user confirms character options, add options to passwordOptions array
   if (hasSpecialChar) {
@@ -58,6 +58,7 @@ function generatePassword() {
   }
 console.log (passwordOptions)
 
+//for loop and math random
   for (var i = 0; i < length; i++ ) {
     var finalPasswordIndex = Math.floor(Math.random() * passwordOptions.length);
     finalPassword.push(passwordOptions[finalPasswordIndex]);
